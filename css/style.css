@@ -1,0 +1,104 @@
+h1{
+    color: red;
+}
+/* 10 - breakpoints*/
+h5{
+    color: aqua;
+}
+
+/* 2 - Sintaxe*/
+@media screen and (max-width: 500px) {
+    /* MAX WIDTH = TELA MENORES QUE ALGUMA RESOLUÇÃO*/
+    h1 {
+        color:blue
+    }
+}
+
+/* 3 - Outros modos de uso*/
+/* screen, print, speech, ali */
+
+@media print and (max-width: 600px) {
+    h1 {
+        color: green;
+    }
+
+}
+
+/* 4- Todos os modos */
+@media (max-width: 700px) {
+    h1 {
+        color: purple;
+    }
+}
+
+/* 5 - Mobile First */
+/* min-width > max-width */
+
+@media (min-width: 200px) {
+    h2 {
+        color: green;
+    }
+
+}
+
+/* 6 - AND na media query */
+@media (min-width: 300px) and (max-width: 400px) {
+    h3 {
+        font-size: 3em;
+    }
+}
+
+/* 7- - Orientation */
+@media (orientation: landscape) {
+    h3 {
+        color: brown
+    }
+}
+
+/* 8 - OR na media query */
+@media (max-width: 200px), (orientation: landscape) {
+    h3 {
+        font-size: 4em;
+        color: aqua;
+    }
+}
+h4 {
+    color: blue;
+}
+/* 9- Cuidado ao aplicar a media query*/
+/* MQ são as ultimas regras */
+@media (min-width: 600px) {
+    h4 {
+        color: red
+    }
+}
+
+
+
+/* Aplicando mobil first */
+/* Tamanhos mais utilizados no mercado */
+/* Padrão inicial */
+
+
+/* 480px - 768px - tablet */
+@media (min-width: 480px) {
+    h5{
+        color: orange;
+    }
+}
+
+/* 768 - 1024 - telas menores, laptops */
+@media (min-width: 768) {
+    h5{
+        color: purple;
+    }
+}
+
+/* 1024px - 1200px = desktop */
+@media (min-width: 1024px) {
+    h5{
+        color: darkred;
+        font-size: 2em;
+    }
+
+}
